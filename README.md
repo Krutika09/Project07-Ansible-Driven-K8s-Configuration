@@ -128,6 +128,8 @@ ansible-playbook -i inventory setup.yml
 kubectl exec -it app-managed -- bash
 curl localhost
 ```
+![image](https://github.com/user-attachments/assets/408bf783-c36d-43af-8763-02d6e9378f8b)
+
 
 You should see the default NGINX welcome page HTML output.
 
