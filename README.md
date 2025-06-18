@@ -41,6 +41,8 @@ spec:
   containers:
   - name: app
     image: ubuntu:22.04
+    command: ["sleep"]
+    args: ["infinity"]
     ports:
     - containerPort: 22
 ```
