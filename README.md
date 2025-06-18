@@ -87,7 +87,7 @@ ansible --version   # Ensure Ansible is installed
 ```
 > `'-o StrictHostKeyChecking=no'` This tells SSH not to prompt you to verify the host's authenticity when connecting for the first time.
 
-**Create the playbook: `setup.yml`**
+**Create the playbook in ansible-master: `setup.yml`**
 
 ```yaml
 - name: Install and start NGINX on web server
