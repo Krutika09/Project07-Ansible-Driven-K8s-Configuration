@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-managed
+  labels:
+    app: web
+spec:
+  containers:
+  - name: app
+    image: ubuntu:22.04
+    command: ["sleep"]
+    args: ["infinity"]
+    ports:
+    - containerPort: 22
