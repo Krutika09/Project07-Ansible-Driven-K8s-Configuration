@@ -1,0 +1,17 @@
++--------------------+                     +---------------------+
+|                    |                     |                     |
+|  ansible-master    |     SSH over        |    app-managed      |
+|  (Ansible Pod)     |-------------------> |   (Ubuntu Pod)      |
+|                    |     port 22         |                     |
++--------------------+                     +---------------------+
+        |                                             |
+        |                                             |
+        |  Ansible Inventory                          | SSH Daemon Running
+        |  setup.yml playbook                         | NGINX Installed via Ansible
+        v                                             v
++---------------------------------------------------------------+
+|                       Kubernetes Cluster                      |
+|  - Pods share internal network                                |
+|  - Both Pods can communicate via Pod IPs                      |
+|  - Controlled using kubectl                                   |
++---------------------------------------------------------------+
