@@ -117,6 +117,8 @@ ansible --version   # Ensure Ansible is installed
 ```bash
 ansible-playbook -i inventory setup.yml
 ```
+![image](https://github.com/user-attachments/assets/78e7858a-c7f7-4e86-96ce-0e9bd35ae148)
+
 
 
 
