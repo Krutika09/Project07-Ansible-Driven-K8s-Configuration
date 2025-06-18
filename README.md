@@ -2,7 +2,6 @@
 
 This project demonstrates how to manually set up Ansible inside a Kubernetes pod (`ansible-master`) and use it to configure another pod (`app-managed`) using SSH. In this example, we install and start **NGINX** on the managed pod via Ansible.
 
----
 
 ## 📦 Components
 
