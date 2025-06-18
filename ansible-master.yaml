@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ansible-master
+spec:
+  containers:
+  - name: ansible
+    image: krutika09/ansible-ubuntu:manual
+    ports:
+    - containerPort: 22
