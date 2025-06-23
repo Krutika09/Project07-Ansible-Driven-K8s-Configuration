@@ -68,6 +68,7 @@ sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd
 /usr/sbin/sshd
 ```
 > `mkdir /var/run/sshd ` The SSH daemon (sshd) uses /var/run/sshd to store its PID file and runtime data. If this directory doesn’t exist, sshd will fail to start with an error like: Missing privilege separation directory: /var/run/sshd
+
 > `/usr/sbin/sshd` This starts the OpenSSH daemon — the service that listens for incoming SSH connections. To enable your container (e.g., app-managed) to accept SSH connections from your ansible-master pod.  If sshd is not running, Ansible can’t connect to the node because SSH port 22 is closed.
 
 ### 4️⃣ Configure Ansible in `ansible-master`
